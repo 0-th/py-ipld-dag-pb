@@ -17,6 +17,20 @@ classifiers = [
 ]
 license = "Apache-2.0 OR MIT"
 license-files = ["LICENSE.md"]
+dependencies = [
+    "bases",
+    "multiformats",
+    "multiformats-config",
+    "typing_validation",
+    "typing_extensions"
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.19",
+  "pylint>=4.0",
+  "pytest>=9.0"
+]
 
 [project.urls]
 Homepage = "https://github.com/storacha/py-ipld-dag-pb"
